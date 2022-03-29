@@ -89,4 +89,26 @@ employee2 = [[1, "Balaji", 201], [2, "Alex", 202]];
 console.log(employee2);
 console.log(employee2[0]);
 console.log(employee2[0][1]);
-/* ---------------- Tuple  END  ----------------- */ 
+/* ---------------- Tuple  END  ----------------- */
+/* ---------------  Enum START -------------- */
+var days;
+(function (days) {
+    days[days["mon"] = 1] = "mon";
+    days[days["tues"] = 2] = "tues";
+    days[days["wed"] = 3] = "wed";
+    days[days["thus"] = 4] = "thus";
+    days[days["fri"] = 5] = "fri";
+    days["sat"] = "Happy Saturday";
+    days["sun"] = "Happy Sunday";
+})(days || (days = {}));
+function listDays(parameter) {
+    if (parameter == days.mon) {
+        return days.sun;
+    }
+    else {
+        return days.sat;
+    }
+}
+console.log(listDays(5));
+console.log(days);
+/* ---------------  Enum End -------------- */ 

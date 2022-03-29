@@ -185,3 +185,33 @@ console.log(employee2[0])
 console.log(employee2[0][1])
 
 /* ---------------- Tuple  END  ----------------- */
+
+
+/* ---------------  Enum START -------------- */
+
+enum days {
+
+  mon = 1,
+  tues,
+  wed,
+  thus,
+  fri,
+  sat = "Happy Saturday",
+  sun ="Happy Sunday"
+
+}
+
+function listDays(parameter:any):days{
+
+if(parameter == days.mon)
+{
+return days.sun
+}else{
+  return days.sat
+}
+ }
+
+console.log(listDays(5))
+
+console.log(days)
+/* ---------------  Enum End -------------- */
