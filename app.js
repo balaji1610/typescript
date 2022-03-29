@@ -129,4 +129,14 @@ function displayData(parameter) {
 }
 displayData("hello");
 displayData(12);
-/* ----------  Union END ----------- */ 
+/* ----------  Union END ----------- */
+/* ----------  Void START ----------- */
+function sayHi() {
+    console.log("Hello Void");
+}
+console.log(sayHi());
+function sayHi2() {
+    return;
+}
+console.log(sayHi2());
+/* ----------  Void END ----------- */ 

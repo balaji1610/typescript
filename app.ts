@@ -246,3 +246,19 @@ displayData("hello");
 displayData(12);
 
 /* ----------  Union END ----------- */
+
+/* ----------  Void START ----------- */
+
+function sayHi():void{
+console.log("Hello Void")
+
+}
+console.log(sayHi())
+
+function sayHi2():void{
+ return
+  
+  }
+   console.log(sayHi2())
+
+/* ----------  Void END ----------- */
