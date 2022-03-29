@@ -211,7 +211,38 @@ return days.sun
 }
  }
 
-console.log(listDays(5))
+console.log(listDays(2))
 
 console.log(days)
 /* ---------------  Enum End -------------- */
+
+
+/* ----------  Union START ----------- */
+
+
+let dataDetails:(string | number)
+
+console.log(dataDetails = 10)
+
+console.log(dataDetails ="Hello Union")
+
+
+function displayData (parameter:(string | number)){
+
+
+  if(typeof(parameter)==="string"){
+
+    console.log("Generated String");
+  }else if(typeof(parameter)==="number"){
+
+    console.log("Generated Number")
+  }else {
+
+console.log("Nothing Generated ")
+  }
+
+}
+displayData("hello");
+displayData(12);
+
+/* ----------  Union END ----------- */

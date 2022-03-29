@@ -109,6 +109,24 @@ function listDays(parameter) {
         return days.sat;
     }
 }
-console.log(listDays(5));
+console.log(listDays(2));
 console.log(days);
-/* ---------------  Enum End -------------- */ 
+/* ---------------  Enum End -------------- */
+/* ----------  Union START ----------- */
+var dataDetails;
+console.log(dataDetails = 10);
+console.log(dataDetails = "Hello Union");
+function displayData(parameter) {
+    if (typeof (parameter) === "string") {
+        console.log("Generated String");
+    }
+    else if (typeof (parameter) === "number") {
+        console.log("Generated Number");
+    }
+    else {
+        console.log("Nothing Generated ");
+    }
+}
+displayData("hello");
+displayData(12);
+/* ----------  Union END ----------- */ 
