@@ -243,10 +243,10 @@ const generateError = (message: string, code: number): never => {
   };
 };
 
-generateError(" An Error Occured !", 201);
+// generateError(" An Error Occured !", 201);
 
-const result = generateError(" An Error Occured !", 201);
-console.log(result); //return any value
+// const result = generateError(" An Error Occured !", 201);
+// console.log(result);                                   //return any value
 
 /*
 const getError = (message:string):never =>{
@@ -276,3 +276,19 @@ console.log("Am a Infiniteloop")
 */
 
 /* ------------ Never End ------ */
+
+/*-------- function Overloading Start --- */
+
+function overloading(a: string, b: string): string;
+
+function overloading(a: number, b: number): number;
+
+function overloading(a: any, b: any): any {
+  return a + b;
+}
+
+console.log(overloading("hello ", "balaji"));
+
+console.log(overloading(1, 2));
+
+/*-------- function Overloading End --- */

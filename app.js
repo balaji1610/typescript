@@ -26,7 +26,11 @@ myCountry = {
     Captial: "Delhi",
     Pm: "Modi"
 };
-console.log(myCountry.Captial + " is a Captial Of " + myCountry.Name + " Our Prime Minister Name " + myCountry.Pm);
+console.log(myCountry.Captial +
+    " is a Captial Of " +
+    myCountry.Name +
+    " Our Prime Minister Name " +
+    myCountry.Pm);
 /* ----------------------   object END        ------------------- */
 /* --------------  String Tools START  ---------------- */
 var nameData1 = "Hello Balaji";
@@ -44,10 +48,10 @@ console.log(nameData1.toLowerCase()); //toLowerCase()
 console.log(nameData1.toUpperCase()); // toUpperCase()
 /* --------------  String Tools END  ---------------- */
 /* ---------------- Array START  ----------------- */
-var seriesName2; // Square Bracket Array 
+var seriesName2; // Square Bracket Array
 seriesName2 = ["Rio", "Denver", "Professor"];
 console.log("Square Bracket Array " + seriesName2[0]);
-var seriesName3; // Generic Type Array 
+var seriesName3; // Generic Type Array
 seriesName3 = ["Professor", "Rio", "Denver"];
 console.log("Generic Type Array " + seriesName3[1]);
 var seriesName;
@@ -66,7 +70,7 @@ var friends3 = ["Rio", "Raqul", "Denver", "Narobi"];
 var friends4 = ["Rio", "Raqul", "Denver", "Narobi"];
 var friends5 = ["Rio", "Raqul", "Denver", "Narobi"];
 var friends6 = ["Rio", "Raqul", "Denver", "Narobi"];
-friends2.push("Last Element Add"); // push() 
+friends2.push("Last Element Add"); // push()
 console.log(friends2);
 friends3.unshift("Frist Element Add"); // unshift ()
 console.log(friends3);
@@ -77,15 +81,18 @@ console.log(friends5);
 friends6 = friends6.concat(["Professor", "Berlin"]);
 console.log(friends6);
 var text = "Hello Balaji What Are hell Doing ?";
-console.log(text.indexOf('Balaji')); // indexOf()
+console.log(text.indexOf("Balaji")); // indexOf()
 /* ---------------- Array  END  ----------------- */
 /* ---------------- Tuple  START  ----------------- */
 var employee = [1, "Alex"];
 console.log(employee);
 console.log(employee[0]);
-//------ Tuple Array 
+//------ Tuple Array
 var employee2;
-employee2 = [[1, "Balaji", 201], [2, "Alex", 202]];
+employee2 = [
+    [1, "Balaji", 201],
+    [2, "Alex", 202],
+];
 console.log(employee2);
 console.log(employee2[0]);
 console.log(employee2[0][1]);
@@ -114,13 +121,13 @@ console.log(days);
 /* ---------------  Enum End -------------- */
 /* ----------  Union START ----------- */
 var dataDetails;
-console.log(dataDetails = 10);
-console.log(dataDetails = "Hello Union");
+console.log((dataDetails = 10));
+console.log((dataDetails = "Hello Union"));
 function displayData(parameter) {
-    if (typeof (parameter) === "string") {
+    if (typeof parameter === "string") {
         console.log("Generated String");
     }
-    else if (typeof (parameter) === "number") {
+    else if (typeof parameter === "number") {
         console.log("Generated Number");
     }
     else {
@@ -147,30 +154,9 @@ var generateError = function (message, code) {
         errorCode: code
     };
 };
-generateError(" An Error Occured !", 201);
-var result = generateError(" An Error Occured !", 201);
-console.log(result); //return any value
-/*
-const getError = (message:string):never =>{
-throw new Error(message);
-
+function overloading(a, b) {
+    return a + b;
 }
-const fail = ()=>{
-
-  return getError("Something Went Wrong !!!!")
-}
-
-console.log(fail())
-
-*/
-/*
-
-const infiniteLoop = ():never=>{
-
- while(true){
-console.log("Am a Infiniteloop")
- }
- }
- infiniteLoop();
-*/
-/* ------------ Never End ------ */ 
+console.log(overloading("hello ", "balaji"));
+console.log(overloading(1, 2));
+/*-------- function Overloading End --- */
