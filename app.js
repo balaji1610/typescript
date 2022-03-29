@@ -139,4 +139,38 @@ function sayHi2() {
     return;
 }
 console.log(sayHi2());
-/* ----------  Void END ----------- */ 
+/* ----------  Void END ----------- */
+/* ----- Never START --------- */
+var generateError = function (message, code) {
+    throw {
+        messageCode: message,
+        errorCode: code
+    };
+};
+generateError(" An Error Occured !", 201);
+var result = generateError(" An Error Occured !", 201);
+console.log(result); //return any value
+/*
+const getError = (message:string):never =>{
+throw new Error(message);
+
+}
+const fail = ()=>{
+
+  return getError("Something Went Wrong !!!!")
+}
+
+console.log(fail())
+
+*/
+/*
+
+const infiniteLoop = ():never=>{
+
+ while(true){
+console.log("Am a Infiniteloop")
+ }
+ }
+ infiniteLoop();
+*/
+/* ------------ Never End ------ */ 

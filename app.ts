@@ -262,3 +262,50 @@ function sayHi2():void{
    console.log(sayHi2())
 
 /* ----------  Void END ----------- */
+
+
+/* ----- Never START --------- */
+
+const generateError = (message:string,code:number):never=>{
+
+throw {
+
+  messageCode:message,
+  errorCode:code
+}
+}
+
+generateError(" An Error Occured !",201);
+
+
+const result = generateError(" An Error Occured !",201);
+console.log(result)                                         //return any value
+
+
+/*
+const getError = (message:string):never =>{
+throw new Error(message);
+
+}
+const fail = ()=>{
+
+  return getError("Something Went Wrong !!!!")
+}
+
+console.log(fail())
+
+*/
+
+/*
+
+const infiniteLoop = ():never=>{
+
+ while(true){
+console.log("Am a Infiniteloop")
+ }
+ }
+ infiniteLoop();
+*/
+
+
+/* ------------ Never End ------ */
