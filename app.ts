@@ -134,6 +134,7 @@ let friends2:string[] = ["Rio","Raqul","Denver","Narobi"]
 let friends3:string[] = ["Rio","Raqul","Denver","Narobi"]
 let friends4:string[] = ["Rio","Raqul","Denver","Narobi"]
 let friends5:string[] = ["Rio","Raqul","Denver","Narobi"]
+let friends6:string[] = ["Rio","Raqul","Denver","Narobi"]
 
 friends2.push("Last Element Add");  // push() 
 
@@ -151,6 +152,10 @@ friends5.shift();  // shift()
 
 console.log(friends5);
 
+friends6 = friends6.concat(["Professor","Berlin"]);
+
+console.log(friends6)
+
 
 var  text:string  = "Hello Balaji What Are hell Doing ?";
 
@@ -159,8 +164,24 @@ console.log(text.indexOf('Balaji'));   // indexOf()
 
 
 
-
-
-
-
 /* ---------------- Array  END  ----------------- */
+
+/* ---------------- Tuple  START  ----------------- */
+
+var employee:[number,string] = [1,"Alex"];
+
+console.log(employee);
+
+console.log(employee[0]);
+
+//------ Tuple Array 
+
+var employee2:[number,string,number] []
+employee2 = [ [1,"Balaji",201],[2,"Alex",202]]
+
+console.log(employee2 ) 
+
+console.log(employee2[0])
+console.log(employee2[0][1])
+
+/* ---------------- Tuple  END  ----------------- */
