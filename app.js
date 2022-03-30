@@ -204,4 +204,12 @@ var employeeData = {
 };
 console.log(employeeData.employeeAge(2022));
 console.log(employeeData.employeeCollegeName("xyz"));
+var dataResult = {
+    a: "balaji", b: "BE"
+};
+var dataResult2 = {
+    a: "alex", b: "BE", c: 18
+};
+console.log(dataResult);
+console.log(dataResult2);
 /* ------------- Interface END ---------- */

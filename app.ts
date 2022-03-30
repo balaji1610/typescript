@@ -416,7 +416,30 @@ console.log(employeeData.employeeAge(2022));
 console.log(employeeData.employeeCollegeName("xyz"));
 
 
+// Optional Property
 
+
+interface data {
+
+
+  a:string;
+  b:string;
+  c?:number;    // remove question mark show list
+}
+
+let dataResult :data={
+
+  a:"balaji",b:"BE"
+}
+
+let dataResult2 :data={
+  a:"alex",b:"BE",c:18
+
+}
+
+
+console.log(dataResult);
+console.log(dataResult2);
 
 
 /* ------------- Interface END ---------- */
