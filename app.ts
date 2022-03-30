@@ -292,3 +292,16 @@ console.log(overloading("hello ", "balaji"));
 console.log(overloading(1, 2));
 
 /*-------- function Overloading End --- */
+
+/* --------- Rest Parameter START --------- */
+
+function personalDetails(says:string,...names:string[]){
+
+
+  return "Good Morning "+" "+says+" How are You ? "+names.join(" ! ");
+}
+
+console.log(personalDetails("Hello","Balaji","Alex","Denver"))
+/* --------- Rest Parameter END --------- */
+
+

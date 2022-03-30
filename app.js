@@ -160,3 +160,13 @@ function overloading(a, b) {
 console.log(overloading("hello ", "balaji"));
 console.log(overloading(1, 2));
 /*-------- function Overloading End --- */
+/* --------- Rest Parameter START --------- */
+function personalDetails(says) {
+    var names = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        names[_i - 1] = arguments[_i];
+    }
+    return "Good Morning " + " " + says + " How are You ? " + names.join(" ! ");
+}
+console.log(personalDetails("Hello", "Balaji", "Alex", "Denver"));
+/* --------- Rest Parameter END --------- */
