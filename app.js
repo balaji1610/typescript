@@ -192,4 +192,16 @@ result({
     font: "20px",
     display: "inline"
 });
-/* ----------- Intersection End -------- */
+var employeeData = {
+    employeeName: "Balaji",
+    employeeArea: "India",
+    employeeAge: function (age) {
+        return age - 2000;
+    },
+    employeeCollegeName: function (clg) {
+        return "Myself " + employeeData.employeeName + "My college name is " + clg + " I live " + employeeData.employeeArea;
+    }
+};
+console.log(employeeData.employeeAge(2022));
+console.log(employeeData.employeeCollegeName("xyz"));
+/* ------------- Interface END ---------- */

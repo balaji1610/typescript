@@ -385,5 +385,43 @@ result({
 /* ----------- Intersection End -------- */
 
 
+/* ------------- Interface START ---------- */
+
+
+interface employeeDetails {
+
+  employeeName:string;
+  employeeArea:string;
+  employeeAge:(age:number)=>number;
+employeeCollegeName(clg:string):string;
+
+}
+
+const employeeData:employeeDetails = {
+  employeeName:"Balaji",
+  employeeArea:"India",
+  employeeAge :(age:number):number =>{
+
+
+    return   age - 2000
+  },
+   employeeCollegeName:function(clg:string):string{
+
+    return "Myself "+employeeData.employeeName+ "My college name is "+clg+" I live "+employeeData.employeeArea;
+   }
+}
+
+console.log(employeeData.employeeAge(2022));
+
+console.log(employeeData.employeeCollegeName("xyz"));
+
+
+
+
+
+/* ------------- Interface END ---------- */
+
+
+
 
 
