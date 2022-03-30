@@ -305,3 +305,85 @@ console.log(personalDetails("Hello","Balaji","Alex","Denver"))
 /* --------- Rest Parameter END --------- */
 
 
+/* ----------- Intersection START -------- */
+
+interface personalDetails {
+
+  firstName:string;
+  lastName:string;
+}
+
+interface parentDetails {
+
+  fatherName:string;
+  motherNmae:string;
+
+}
+
+interface communicationDetails {
+
+  email:string;
+  mobile:number;
+}
+
+type overallData = personalDetails & parentDetails & communicationDetails;
+
+let dataV2 :overallData = {
+  firstName:'Balaji',
+  lastName:'M',
+  fatherName:'x',
+  motherNmae:'y',
+  email:"abc@gmail.com",
+  mobile:123456789
+}
+
+console.log("Hello "+dataV2.firstName+" "+dataV2.lastName+","+" My Email Id is "+dataV2.email+" My Mobile Number "+dataV2.mobile);
+
+
+
+//method 2
+
+
+const div1 = document.getElementById("intersection") as HTMLDivElement;
+
+
+interface bg{
+
+  backgroundColor:string;
+}
+
+interface color{
+  color:string;
+}
+
+interface fontSize {
+
+  font:string;
+}
+interface display {
+
+  display:string;
+}
+
+
+type over = bg & color & fontSize & display;
+
+const result = (overData:over)=>{
+  div1.style.color = overData.color;
+  div1.style.backgroundColor = overData.backgroundColor;
+  div1.style.fontSize = overData.font;
+  div1.style.display = overData.display;
+}
+
+result({
+   backgroundColor:'blue',
+  color:'red',
+  font:"20px",
+  display:"inline"
+})
+
+/* ----------- Intersection End -------- */
+
+
+
+

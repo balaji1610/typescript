@@ -169,4 +169,27 @@ function personalDetails(says) {
     return "Good Morning " + " " + says + " How are You ? " + names.join(" ! ");
 }
 console.log(personalDetails("Hello", "Balaji", "Alex", "Denver"));
-/* --------- Rest Parameter END --------- */
+var dataV2 = {
+    firstName: 'Balaji',
+    lastName: 'M',
+    fatherName: 'x',
+    motherNmae: 'y',
+    email: "abc@gmail.com",
+    mobile: 123456789
+};
+console.log("Hello " + dataV2.firstName + " " + dataV2.lastName + "," + " My Email Id is " + dataV2.email + " My Mobile Number " + dataV2.mobile);
+//method 2
+var div1 = document.getElementById("intersection");
+var result = function (overData) {
+    div1.style.color = overData.color;
+    div1.style.backgroundColor = overData.backgroundColor;
+    div1.style.fontSize = overData.font;
+    div1.style.display = overData.display;
+};
+result({
+    backgroundColor: 'blue',
+    color: 'red',
+    font: "20px",
+    display: "inline"
+});
+/* ----------- Intersection End -------- */
