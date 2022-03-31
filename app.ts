@@ -424,7 +424,7 @@ interface data {
 
   a:string;
   b:string;
-  c?:number;    // remove question mark show list
+  c?:number;    // remove question mark show result
 }
 
 let dataResult :data={
